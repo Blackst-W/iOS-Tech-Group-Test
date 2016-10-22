@@ -19,13 +19,16 @@ class Song {
         self.album = album
         self.playing_time = playing_time
     }
+    
+    //searchSong这个功能应该写在playlist或musicCollection里面才对
     func searchSong(name: String) {
+        //这个library是在哪里声明的？如果换了一个名字这里还能正确引用到library吗？
         for item in library.songArray {
             if item.title == name {
+                //输出的格式要注意
                 print (item.title,item.artist,item.album,item.playing_time)
             }
         }
     }
 }
-let song1 = Song(title:"song1",artist:"artist1",album:"album1",playing_time:2.12)
-let song2 = Song(title:"song2",artist:"artist2",album:"album2",playing_time:1.56)
+
