@@ -8,3 +8,5 @@
 
 import Foundation
 
+var exampleSong = Song(title: "name", artist: "artist", album: "album", playing_time: 150)
+exampleSong.searchSong(name: "name")
